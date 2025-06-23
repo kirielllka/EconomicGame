@@ -2,8 +2,8 @@ from sqlalchemy import Column,Integer,String, Float, DATETIME, func, ForeignKey
 
 from database import Base
 
-class Profile(Base):
-    __tablename__ = 'profile'
+class User(Base):
+    __tablename__ = 'User'
     id = Column(Integer, primary_key=True)
     balance = Column(Float, default=1000)
     experience = Column(Integer)
